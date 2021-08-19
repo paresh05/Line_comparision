@@ -30,7 +30,6 @@ public class Linecomp {
 	    
 	    
 	 // code for line 2
-	 		System.out.println("Welcome to Line Comparision Computation Program");
 	 	    System.out.println("Enter the value of a1");
 	 	    int a1 = sc.nextInt();  
 	 	    System.out.println("x1 is: " + a1);
@@ -50,8 +49,13 @@ public class Linecomp {
 	 	  
 	 	    System.out.println("Length of line 2 is: "+lengthOfaLine2);
 	 	    
-	 	   if(lengthOfaLine1.equals(lengthOfaLine2))
-		    	System.out.println("Length of 2 Lines are equal");
+	 	   int b=(lengthOfaLine1.compareTo(lengthOfaLine2));
+	 	   if(b<0)
+	 		   System.out.println("Length of Line 2 is greater than Line 1");
+	 	   else if (b>0)
+	 		  System.out.println("Length of Line 1 is greater than Line 2");
+	 	   else if(b==0)
+	 		  System.out.println("Length of 2 Lines are equal");
 		
 	}
 
